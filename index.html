@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <Title>Soccer Trivia</Title>
+    <!-- CSS Reset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- BOOTSTRAP CDN  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- LINK TO STYLESHEET  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- LINK TO GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Kreon" rel="stylesheet">
+     <!-- LINK TO JQUERY -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <!-- LINK TO JAVASCRIPT -->
+    <script src="assets/javascript/app.js"></script>
+
+</head>
+
+<body>
+    <img src="assets/images/jumbotron.gif" alt="Shaolin" class="center">
+
+    <div id="intro">
+        <h1>World Soccer Trivia</h1>
+
+        <h2>You have 45 seconds to choose correctly beginning when you start the quiz.</h2>
+        
+        <div id = "show-number">
+            45
+        </div>
+    </div>
+    
+
+    <form id="quiz" class="quiz" name="quiz">
+
+        <!-- Question 1 -->
+        <p>Which team won the UEFA Champions League in 2018/2019?</p>
+        <input type="radio" id="mc" name="question1" value="Liverpool">  Liverpool<br>
+        <input type="radio" id="mc" name="question1" value="Porto">  Porto<br>
+        <input type="radio" id="mc" name="question1" value="Real Madrid">  Real Madrid<br>
+        <input type="radio" id="mc" name="question1" value="Manchester City">  Manchester City<br>
+        <br><br>
+
+        <!-- Question 2 -->
+        <p>Who won the 1994 FIFA World Cup?</p>
+        <input type="radio" id="mc" name="question2" value="France">  France<br>
+        <input type="radio" id="mc" name="question2" value="Germany">  Germany<br>
+        <input type="radio" id="mc" name="question2" value="Brazil">  Brazil<br>
+        <input type="radio" id="mc" name="question2" value="Netherlands">  Netherlands<br>
+        <br>
+
+        <!-- Question 3 -->
+        <p>Which of these soccer players have never played for Real Madrid?</p>
+        <input type="radio" id="mc" name="question3" value="Alvaro Arbeloa"> Alvaro Arbeloa<br>
+        <input type="radio" id="mc" name="question3" value="Arjen Robben"> Arjen Robben<br>
+        <input type="radio" id="mc" name="question3" value="Gonzalo Higuain"> Gonzalo Higuain<br>
+        <input type="radio" id="mc" name="question3" value="Lionel Messi"> Lionel Messi<br>
+        <br>
+
+        <!-- Question 4 -->
+        <p>According to the official FIFA rulebook, how long can a goalkeeper hold onto the ball for?</p>
+        <input type="radio" id="mc" name="question4" value="10 seconds"> 10 seconds<br>
+        <input type="radio" id="mc" name="question4" value="1 minute">  1 minute<br>
+        <input type="radio" id="mc" name="question4" value="3 seconds">  3 seconds<br>
+        <input type="radio" id="mc" name="question4" value="5 seconds">  5 seconds<br>
+        <br>
+
+        <!-- Question 5 -->
+        <p>Which international team does Eden Hazard play for?</p>
+        <input type="radio" id="mc" name="question5" value="France">  France<br>
+        <input type="radio" id="mc" name="question5" value="Belgium">  Belgium<br>
+        <input type="radio" id="mc" name="question5" value="Germany">  Germany<br>
+        <input type="radio" id="mc" name="question5" value="Switzerland">  Switzerland<br>
+        <br><br>
+
+        <!-- Question 6 -->
+        <p>How many Ballon D'ors does Cristiano Ronaldo and Lionel Messi have combined?</p>
+        <input type="radio" id="mc" name="question6" value="6">  6<br>
+        <input type="radio" id="mc" name="question6" value="2">  2<br>
+        <input type="radio" id="mc" name="question6" value="10">  10<br>
+        <input type="radio" id="mc" name="question6" value="12">  12<br>
+        <br>
+
+        <!-- Question 7 -->
+        <p>Which Premier League team surprised everyone by winning the league title?</p>
+        <input type="radio" id="mc" name="question7" value="Leicester City">  Leicester City<br>
+        <input type="radio" id="mc" name="question7" value="Stoke City">  Stoke City<br>
+        <input type="radio" id="mc" name="question7" value="Newcastle">  Newcastle<br>
+        <input type="radio" id="mc" name="question7" value="Wolverhampton Wanderers">  Wolverhampton Wanderers<br>
+        <br>
+
+        <input id="button" type="button" value="I'm Done!" onclick="check();">
+
+
+    </form>
+
+    <div id="after_submit">
+
+        <p id="number_correct"></p>
+        <p id="number_incorrect"></p>
+        <img id="picture">
+
+    </div>
+
+   
+
+</body>
+
+
+</html>
