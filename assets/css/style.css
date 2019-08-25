@@ -27,7 +27,7 @@ img {
 
 
 .startButton {
-    background: rgb(25, 80, 9);
+    background: rgb(25, 80, 9, 0.5);
     border: 3px double rgb(255, 255, 255);
     border-radius: 60px;
     color: rgb(253, 253, 253);
@@ -45,11 +45,6 @@ h1 {
     color: white;
     text-align: center;
     color: white;
-    text-shadow:
-        -1px -1px 0 rgb(80, 208, 247),
-        1px -1px 0 rgb(80, 208, 247),
-        -1px 1px 0 rgb(80, 208, 247),
-        1px 1px 0 rgb(80, 208, 247);
 }
 
 h2 {
@@ -126,4 +121,5 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
